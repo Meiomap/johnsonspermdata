@@ -81,7 +81,7 @@ metadata=as.data.frame(gse$`GSE19247-GPL6985_series_matrix.txt.gz`) %>%
 metadata[metadata$celltype=='sperm cell',]$embryoid=metadata[metadata$celltype=='sperm cell',]$title
 metadf_sperm=map_if(samplelist_sperm,function(x) !is.null(x),function(x) get_and_folder_in(x,download=FALSE))
 metadf_sperm_merged = Reduce(function(...) merge(..., all=T), metadf_sperm)
-write_samplesheet('johnsonsperm.csv',metadf_sperm_merged,gtcpath = 'data_raw' )
+write_samplesheet('data/johnsonsperm.csv',metadf_sperm_merged,gtcpath = '../data-raw' )
 
 samplesheet=file.path('johnsonsperm.csv')
 
