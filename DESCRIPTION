@@ -1,0 +1,13 @@
+Package: johnsonspermdata
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Author: Ivan Vogel
+Maintainer: Ivan Vogel <ivogel@sund.ku.dk>
+Description: Metadata for publicly available collection of single cell SNP array experiments from GEO database (GSE19247)
+License: MIT
+Encoding: UTF-8
+LazyData: false
+URL: https://github.com/Meiomap/johnsonspermdata
+Depends: 
+    R (>= 2.10)
